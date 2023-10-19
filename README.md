@@ -1,79 +1,42 @@
-![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
+![MacBook Air - 2 (3)](https://user-images.githubusercontent.com/75136330/203812467-8b00176d-9d31-4c09-86c0-8b82b8c661eb.png)
+![127 0 0 1_5173_ (1)](https://user-images.githubusercontent.com/75136330/203812531-baeb4957-5c7d-4222-a07a-2805b278bdbf.png)
 
-### Live - https://react-portfolio-template.netlify.app/
+# React Portfolio 2
+### Vite + React + tailwind
 
-### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
+```bash 
+npm i
+npm run dev
+```
+## You Learn:
++ react js hooks
++ folder structure
++ tailwind css
++ swiper js
++ react icons
++ react js packages (ex:react-modal)
++ email js
++ aos scroll animation
++ and more....
 
-### Tutorials
+## youtube video link
+[Watch now](https://youtu.be/YpFK4hUZ-NM)
 
-Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
+## live preview link
+[See Now](https://codeaprogram-portfolio.web.app/)
 
-Blog - https://blog.chetanverma.com/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
+## Startup repository link
+[Repository](https://github.com/Sridhar-C-25/React_portfolio_2_startup)
 
-### Features - 
-
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
-
-
-### Sections
-
-- Header
-- Work
-- Services
-- About
-- Contact
-- Markdown Blog
-
-
-### How To Use
-
-- Clone this repo
-- run `yarn`
-- `yarn dev`
-
-
-### How To Deploy - 
-
-- There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
-- after login select the forked repo or the repo you want to deploy
-- after selecting netlify will automatially deploy your website.
-
-Quickes way to deploy this repo - 
-
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
-
-
-### How To Contribute - 
-
-I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
-
-
-### Tech Stack Used - 
-- Next.js
-- TailwindCSS
-
-
-### Thanks
-
-If you liked this portfolio template, don't forget to give it a ⭐.
-
-## Awesome Contributors
-[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
-
-## Supporting
-Many hours of hard work have gone into this project. Your support will be very appreciated!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
-
-
-
+## packages:
++ [tailwind css](https://tailwindcss.com/docs/installation)
++ [vite js](https://vitejs.dev/guide/)
++ [swiper js](https://swiperjs.com/get-started)
++ [email js](https://www.emailjs.com/docs/)
++ [Aos (animation)](https://michalsnik.github.io/aos/)
++ [react modal](https://www.npmjs.com/package/react-modal)
++ [react-hot-toast](https://react-hot-toast.com/docs)
++ [react icons](https://react-icons.github.io/react-icons/)
 
 
 
