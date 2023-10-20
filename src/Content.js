@@ -66,7 +66,7 @@ export const content = {
     hero_content: [
       {
         count: "8+",
-        text: "Esperienza in un ristorante italiano",
+        text: "Anni di esperienza in un ristorante italiano",
       },
       {
         count: "20+",
@@ -81,7 +81,7 @@ export const content = {
       {
         name: "Pianificatore di eventi",
         para: "Lorem ipsum text  dummy",
-        logo: evento,
+        logo: figma,
       },
       {
         name: "Tito Calderon",
