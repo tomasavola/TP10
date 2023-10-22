@@ -14,10 +14,9 @@ import services_logo3 from "./assets/images/Services/logo3.png";
 
 import person_project from "./assets/images/projects/person.png";
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
+import santi from "./assets/images/Testimonials/santi.png";
+import juanceto from "./assets/images/Testimonials/juanceto.png";
+import desconocido from "./assets/images/Testimonials/desconocido.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
@@ -140,27 +139,27 @@ export const content = {
     testimonials_content: [
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
+          "“ Y esos auris de virgo momo?”",
+        img: juanceto,
+        name: "Juanceto01",
       },
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
+          "“Momo sacate la bandera que la representas mal.”",
+        img: desconocido,
+        name: "Usuario desconocido",
       },
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
+          "“Momo te haces el que sabes de futbol y sos de Platense”",
+        img: santi,
+        name: "Santi",
       },
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
+          "“Momo quien te corto el pelo? Para no ir.”",
+        img: desconocido,
+        name: "Usuario desconocido",
       },
     ],
   },
