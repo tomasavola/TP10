@@ -1,15 +1,29 @@
-import { content } from "../Content";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-import { Pagination } from "swiper";
+import { content } from '../Content';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
 
 const Projects = () => {
   const { Projects } = content;
+  const [creaciones, setCreaciones] = useState([]);
+
+  useEffect(() => {
+    // Ruta al archivo JSON local
+    const jsonFile = './src/json/creations.json';
+
+    axios.get(jsonFile)
+      .then((response) => {
+        setCreaciones(response.data);
+      })
+      .catch((error) => {
+        console.error('Error al obtener datos:', error);
+      });
+  }, []); // El segundo argumento del useEffect (un array vacío) asegura que se ejecute solo una vez al montar el componente.
+
   return (
     <section className="bg-bg_light_primary" id="projects">
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
@@ -38,16 +52,18 @@ const Projects = () => {
             modules={[Pagination]}
             className="rounded-3xl pb-16 max-w-xs drop-shadow-primary self-start"
           >
-            {Projects.project_content.map((content, i) => (
+            {creaciones.map((creacion, i) => (
               <SwiperSlide
                 key={i}
                 className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
               >
-                <img src={content.image} alt="..." />
+                <img src={creacion.imagenes[0]} alt="..." />
                 <div className="flex flex-col gap-1 mt-2">
-                  <h5 className="font-bold font-Poppins">{content.title}</h5>
+                  <h5 className="font-bold font-Poppins">{creacion.titulo}</h5>
                   <button className="font-bold text-gray self-end">
-                    READ MORE
+                    <a href={creacion.url} target="_blank" rel="noopener noreferrer">
+                      READ MORE
+                    </a>
                   </button>
                 </div>
               </SwiperSlide>

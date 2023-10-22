@@ -1,0 +1,16 @@
+[
+  {
+    "titulo": "Calcio d'angolo nella finale dei Mondiali",
+    "descripcion": "Bellissimo calcio d'angolo alla testa del mio compagno di squadra per vincere il titolo",
+    "imagenes": ["./src/json/img1.png"],
+    "fecha": "2023-10-20",
+    "url": "https://ejemplo.com/creacion1"
+  },
+  {
+    "titulo": "Creación 2",
+    "descripcion": "Descripción de la creación 2",
+    "imagenes": ["imagen3.jpg", "imagen4.jpg"],
+    "fecha": "2023-10-21",
+    "url": "https://ejemplo.com/creacion2"
+  }
+]
