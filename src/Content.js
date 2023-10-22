@@ -1,12 +1,12 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 
-import evento from "./assets/images/Skills/evento.png";
-import tito from "./assets/images/Skills/tito.png";
-import ps from "./assets/images/Skills/ps.png";
-import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import disco from "./assets/images/Skills/disco.png";
+import chef from "./assets/images/Skills/chef.png";
+import twitch from "./assets/images/Skills/twitch.png";
+import pelota from "./assets/images/Skills/pelota.png";
+import musica from "./assets/images/Skills/musica.png";
+import logitech from "./assets/images/Skills/logitech.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -77,32 +77,32 @@ export const content = {
       {
         name: "Pianificatore di eventi",
         para: "Lorem ipsum text  dummy",
-        logo: evento,
+        logo: disco,
       },
       {
         name: "Tito Calderon",
         para: "Reggaeton vecchia scuola imbattibile",
-        logo: tito,
+        logo: musica,
       },
       {
         name: "Calcio",
         para: "Capitano della quarta divisione del Platense e del Napoli",
-        logo: ps,
+        logo: pelota,
       },
       {
         name: "Twitch",
         para: "Record di persone bannate su Twitch",
-        logo: reactjs,
+        logo: twitch,
       },
       {
         name: "Logitech",
         para: "Portatore di auris sessualmente repellente",
-        logo: evento,
+        logo: logitech,
       },
       {
         name: "Cucina",
         para: "Esperto in cucina di Capeletini e degustatore professionista dal 9 de Julio",
-        logo: python,
+        logo: chef,
       },
     ],
     icon: MdArrowForward,
