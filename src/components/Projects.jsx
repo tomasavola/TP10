@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom"; // Importa Link
+import { content } from "../Content";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
-import { content } from '../Content';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
 
 const Projects = () => {
   const { Projects } = content;
@@ -60,11 +61,7 @@ const Projects = () => {
                 <img src={creacion.imagenes[0]} alt="..." />
                 <div className="flex flex-col gap-1 mt-2">
                   <h5 className="font-bold font-Poppins">{creacion.titulo}</h5>
-                  <button className="font-bold text-gray self-end">
-                    <a href={creacion.url} target="_blank" rel="noopener noreferrer">
-                      READ MORE
-                    </a>
-                  </button>
+                  <Link to={`/project/${creacion.id}`}>Ver detalles</Link>
                 </div>
               </SwiperSlide>
             ))}

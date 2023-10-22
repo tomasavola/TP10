@@ -1,16 +1,18 @@
-// import components
-import Hero from "./components/Hero";
+// App.jsx
+
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Navbar from "./Layouts/Navbar";
+import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
 import Projects from "./components/Projects";
+import ProjectDetail from "./components/ProjectDetail";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
-import { useEffect } from "react";
-// Animation package
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const App = () => {
   useEffect(() => {
@@ -20,21 +22,28 @@ const App = () => {
       disable: "mobile",
     });
   }, []);
+
   return (
-    <div className="">
-      <Navbar />
-      <Hero />
-      <Skills />
-      <Service />
-      <Projects />
-      <Testimonials />
-      <Hireme />
-      <Contact />
-      <footer className="p-3 text-center">
-        <h6 className="mb-3">Geronimo Benavidez</h6>
-        <p>codeaprogram © All CopyRights Reserved 2022</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="">
+        <Navbar />
+        <Hero />
+        <Skills />
+        <Service />
+        <Routes>
+          <Route path="/" element={<Projects />} />
+          {/* Utiliza el parámetro "id" en la ruta */}
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+        <Testimonials />
+        <Hireme />
+        <Contact />
+        <footer className="p-3 text-center">
+          <h6 className="mb-3">Geronimo Benavidez</h6>
+          <p>codeaprogram © All CopyRights Reserved 2022</p>
+        </footer>
+      </div>
+    </Router>
   );
 };
 
