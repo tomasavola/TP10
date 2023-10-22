@@ -2,7 +2,7 @@
 import Hero_person from "./assets/images/Hero/person.png";
 
 import evento from "./assets/images/Skills/evento.png";
-import sketch from "./assets/images/Skills/sketch.png";
+import tito from "./assets/images/Skills/tito.png";
 import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
@@ -82,7 +82,7 @@ export const content = {
       {
         name: "Tito Calderon",
         para: "Reggaeton vecchia scuola imbattibile",
-        logo: nodejs,
+        logo: tito,
       },
       {
         name: "Calcio",
@@ -97,7 +97,7 @@ export const content = {
       {
         name: "Logitech",
         para: "Portatore di auris sessualmente repellente",
-        logo: sketch,
+        logo: evento,
       },
       {
         name: "Cucina",
