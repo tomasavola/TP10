@@ -3,11 +3,14 @@ import { useParams } from 'react-router-dom';
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const [project, setProject] = useState({ title: '', description: '', images: [] });
+  const [project, setProject] = useState({
+    title: '',
+    description: '',
+    images: [],
+  });
 
   useEffect(() => {
-    // Simula la carga de datos desde un archivo JSON local
-    fetch(`./src/json/projects.json`)
+    fetch('./src/json/creations.json')
       .then((response) => response.json())
       .then((data) => {
         const selectedProject = data.find((p) => p.id.toString() === id);
@@ -22,15 +25,16 @@ const ProjectDetail = () => {
 
   return (
     <main>
+      <h1></h1>
       <section className="project-detail">
         <div className="project-images">
-          {project.images.map((image, index) => (
+          {project.imagenes.map((image, index) => (
             <img key={index} src={image} alt={`Project Image ${index + 1}`} />
           ))}
         </div>
         <div className="project-info">
-          <h1 className="project-title">{project.title}</h1>
-          <p className="project-description">{project.description}</p>
+          <h1 className="project-title">{project.titulo}</h1>
+          <p className="project-description">{project.descripcion}</p>
         </div>
       </section>
     </main>

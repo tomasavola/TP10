@@ -61,7 +61,7 @@ const Projects = () => {
                 <img src={creacion.imagenes[0]} alt="..." />
                 <div className="flex flex-col gap-1 mt-2">
                   <h5 className="font-bold font-Poppins">{creacion.titulo}</h5>
-                  <Link to={`/project/${creacion.id}`}>Ver detalles</Link>
+                  <Link to={"/project/"+ creacion.id}>Ver detalles</Link>
                 </div>
               </SwiperSlide>
             ))}
