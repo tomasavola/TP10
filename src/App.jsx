@@ -9,10 +9,12 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
 import Projects from "./components/Projects";
-import ProjectDetail from "./components/ProjectDetail";
+import ProjectDetail from "./pages/ProjectDetail";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
+import FavoritosProvider from "./context/FavoritosContext";
+import DataPortfolioProvider from "./context/DataPorfolioContext";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +27,8 @@ const App = () => {
 
   return (
     <Router>
+      <FavoritosProvider>
+        <DataPortfolioProvider>
       <div className="">
         <Navbar />
         <Hero />
@@ -43,6 +47,8 @@ const App = () => {
           <p>codeaprogram © All CopyRights Reserved 2022</p>
         </footer>
       </div>
+      </DataPortfolioProvider>
+      </FavoritosProvider>
     </Router>
   );
 };
