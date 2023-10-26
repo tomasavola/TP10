@@ -14,7 +14,8 @@ export default function ProjectDetail() {
 
   const loadCreation = () => {
     dataPortfolio.map(data => {
-      if (data.id.toString() === creationId.toString()) {
+       // Solucion 1
+      if (data.id === creationId) { // Solucion 2
         setCreation(data);
       }
     })
