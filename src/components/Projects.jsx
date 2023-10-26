@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom"; // Importa Link
 import { content } from "../Content";
@@ -6,24 +6,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { DataPortfolioContext } from "../context/DataPorfolioContext";
 
 
 const Projects = () => {
-  const { Projects } = content;
-  const [creaciones, setCreaciones] = useState([]);
+  const { Projects } = content;  
+  let { dataPortfolio } = useContext(DataPortfolioContext);
 
-  useEffect(() => {
-    // Ruta al archivo JSON local
-    const jsonFile = './src/json/creations.json';
 
-    axios.get(jsonFile)
-      .then((response) => {
-        setCreaciones(response.data);
-      })
-      .catch((error) => {
-        console.error('Error al obtener datos:', error);
-      });
-  }, []); // El segundo argumento del useEffect (un array vacío) asegura que se ejecute solo una vez al montar el componente.
+  console.log('dataPortfolio',dataPortfolio)
 
   return (
     <section className="bg-bg_light_primary" id="projects">
@@ -53,7 +44,7 @@ const Projects = () => {
             modules={[Pagination]}
             className="rounded-3xl pb-16 max-w-xs drop-shadow-primary self-start"
           >
-            {creaciones.map((creacion, i) => (
+            {dataPortfolio.map((creacion, i) => (
               <SwiperSlide
                 key={i}
                 className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"

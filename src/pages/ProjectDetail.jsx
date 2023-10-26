@@ -10,7 +10,7 @@ export default function ProjectDetail() {
   let { dataPortfolio } = useContext(DataPortfolioContext);
   let { favorites, addCreation, deleteCreation } = useContext(FavoritosContext);
   const { creationId } = useParams();
-  const [creation, setCreation] = useState({});
+  const [creation, setCreation] = useState(null);
 
   const loadCreation = () => {
     dataPortfolio.map(data => {

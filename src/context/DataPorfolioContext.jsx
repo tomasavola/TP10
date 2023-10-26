@@ -8,15 +8,16 @@ const DataPortfolioProvider = (props) => {
 
   useEffect(() => {
     axios
-      .get("src/json/creations.json")
+      .get("/json/creations.json")
       .then((result) => {
-        setDataPortfolio(result.data.dataportfolio);
+        setDataPortfolio(result.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
+  console.log('dataPortfoliocontext',dataPortfolio)
 
   return (
     <DataPortfolioContext.Provider

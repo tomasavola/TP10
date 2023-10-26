@@ -3,7 +3,7 @@
     "id": 1,
     "titulo": "Calcio d'angolo nella finale dei Mondiali",
     "descripcion": "Bellissimo calcio d'angolo alla testa del mio compagno di squadra per vincere il titolo",
-    "imagenes": ["./src/json/img1.png"],
+    "imagenes": ["http://localhost:5173/json/img1.png"],
     "fecha": "2023-10-20",
     "url": "https://ejemplo.com/creacion1"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "titulo": "boxe il giorno dell'anno",
     "descripcion": "Descripción de la creación 2",
-    "imagenes": ["./src/json/img2.png"],
+    "imagenes": ["http://localhost:5173/json/img2.png"],
     "fecha": "2023-10-21",
     "url": "https://ejemplo.com/creacion2"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "titulo": "Italiano accanto ad un carro armato da guerra utilizzato dalle truppe italiane",
     "descripcion": "Descripción de la creación 2",
-    "imagenes": ["./src/json/img4.png"],
+    "imagenes": ["http://localhost:5173/json/img4.png"],
     "fecha": "2023-10-21",
     "url": "https://ejemplo.com/creacion2"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "titulo": "Studente italiano di ingegneria che si prepara a sostenere l'esame finale",
     "descripcion": "Descripción de la creación 2",
-    "imagenes": ["./src/json/img5.png"],
+    "imagenes": ["http://localhost:5173/json/img5.png"],
     "fecha": "2023-10-21",
     "url": "https://ejemplo.com/creacion2"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "titulo": "Il compositore italiano pubblica la sua nuova canzone intitolata ´me llama´",
     "descripcion": "Descripción de la creación 2",
-    "imagenes": ["./src/json/img6.png"],
+    "imagenes": ["http://localhost:5173/json/img6.png"],
     "fecha": "2023-10-21",
     "url": "https://ejemplo.com/creacion2"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "titulo": "Cittadino italiano in visita per la prima volta alle spiagge di San Clemente",
     "descripcion": "Descripción de la creación 2",
-    "imagenes": ["./src/json/img7.png"],
+    "imagenes": ["http://localhost:5173/json/img7.png"],
     "fecha": "2023-10-21",
     "url": "https://ejemplo.com/creacion2"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "titulo": "Soldato italiano rimasto su una sedia a rotelle dopo essere rimasto ferito in guerra",
     "descripcion": "Descripción de la creación 2",
-    "imagenes": ["./src/json/img8.png"],
+    "imagenes": ["http://localhost:5173/json/img8.png"],
     "fecha": "2023-10-21",
     "url": "https://ejemplo.com/creacion2"
   }
