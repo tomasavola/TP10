@@ -1,0 +1,50 @@
+:root {
+    --bgColor: blue;
+    --textHoverColor: white;
+    --debug: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .button {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 0.75em 1em;
+    color: var(--bgColor);
+    border: 0.15em solid var(--bgColor);
+    border-radius: calc(0.75em + 0.5em + 0.15em);
+    transition: 4s;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    position: absolute;
+    top: -1.5em;
+    z-index: -1;
+    width: 200%;
+    aspect-ratio: 1;
+    border: none; /* Establece border en "none" por defecto */
+    border-radius: 40%;
+    background-color: rgba(var(--bgColor), 0.25);
+    transition: 4s;
+  }
+  
+  .button:hover::before,
+  .button:hover::after {
+    border: inherit; /* Establece border en "inherit" al hacer hover */
+    transform: none;
+    background-color: rgba(var(--bgColor), 0.75);
+  }
+  

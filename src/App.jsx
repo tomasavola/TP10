@@ -11,7 +11,6 @@ import Service from "./components/Services";
 import Projects from "./components/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Testimonials from "./components/Testimonials";
-import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import FavoritosProvider from "./context/FavoritosContext";
 import DataPortfolioProvider from "./context/DataPorfolioContext";
@@ -40,7 +39,7 @@ const App = () => {
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
         <Testimonials />
-        <Hireme />
+        
         <Contact />
         <footer className="p-3 text-center">
           <h6 className="mb-3">Geronimo Benavidez</h6>
