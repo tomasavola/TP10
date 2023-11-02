@@ -1,50 +1,58 @@
-:root {
-    --bgColor: blue;
-    --textHoverColor: white;
-    --debug: 0;
-  }
-  
-  body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    font-size: 1.75em;
   }
   
-  .button {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 2em;
+  button {
+    appearance: none;
+    border: none;
+    font-size: inherit;
+    border-radius: 2em;
     padding: 0.75em 1em;
-    color: var(--bgColor);
-    border: 0.15em solid var(--bgColor);
-    border-radius: calc(0.75em + 0.5em + 0.15em);
-    transition: 4s;
+    background: blue;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    cursor: wait;
   }
   
-  .button::before,
-  .button::after {
-    content: '';
-    position: absolute;
-    top: -1.5em;
-    z-index: -1;
-    width: 200%;
-    aspect-ratio: 1;
-    border: none; /* Establece border en "none" por defecto */
-    border-radius: 40%;
-    background-color: rgba(var(--bgColor), 0.25);
-    transition: 4s;
+  .spinner {
+    --size: 1.25em;
+    --offset-r: calc(var(--size) * -1);
+    --offset-l: 0;
+    --opacity: 0;
+    position: relative;
+    display: inline-flex;
+    height: var(--size);
+    width: var(--size);
+    margin-top: calc(var(--size) * -0.5);
+    margin-right: var(--offset-r);
+    margin-bottom: calc(var(--size) * -0.5);
+    margin-left: var(--offset-l);
+    box-sizing: border-box;
+    border: 0.125em solid rgba(255, 255, 255, 0.333);
+    border-top-color: white;
+    border-radius: 50%;
+    opacity: var(--opacity);
+    transition: 0.25s;
   }
   
-  .button:hover::before,
-  .button:hover::after {
-    border: inherit; /* Establece border en "inherit" al hacer hover */
-    transform: none;
-    background-color: rgba(var(--bgColor), 0.75);
+  button:active .spinner,
+  button:focus .spinner,
+  button:hover .spinner {
+    --width: 1em;
+    --offset-r: 0.333em;
+    --offset-l: -0.333em;
+    --opacity: 1;
+    animation: 0.666s load infinite;
+  }
+  
+  @keyframes load {
+    to {
+      transform: rotate(360deg);
+    }
   }
   

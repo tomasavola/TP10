@@ -3,7 +3,9 @@ import { useEffect, useState, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { DataPortfolioContext } from "../context/DataPorfolioContext";
 import { FavoritosContext } from "../context/FavoritosContext";
-import dedo from "../assets/images/Hireme/dedo.png";
+import './estilo.css';
+
+
 
 export default function ProjectDetail() {
   let { dataPortfolio } = useContext(DataPortfolioContext);
@@ -20,8 +22,8 @@ export default function ProjectDetail() {
   if (creation) {
     return (
       <>
-        <Link to="/" className="btn-back">
-          &larr; Back
+        <Link to="/" className="back-link">
+        Go back
         </Link>
         <section className="bg-bg_light_primary">
           <div className="md:container px-5 pt-14">
