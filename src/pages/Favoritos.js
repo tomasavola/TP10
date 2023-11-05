@@ -3,7 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { MetaContext } from "../../context/MetaContext";
-import { FavoritosContext } from "../context/FavoritosContext";
+import { FavoritesContext } from "../context/FavoritesContext";
 import { Link } from "react-router-dom";
 
 export const Favoritos = () => {

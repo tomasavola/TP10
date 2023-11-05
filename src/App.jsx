@@ -12,7 +12,7 @@ import Projects from "./components/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
-import FavoritosProvider from "./context/FavoritosContext";
+import FavoritesProvider from "./context/FavoritesContext";
 import DataPortfolioProvider from "./context/DataPorfolioContext";
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <Router>
-      <FavoritosProvider>
+      <FavoritesProvider>
         <DataPortfolioProvider>
       <div className="">
         <Navbar />
@@ -47,7 +47,7 @@ const App = () => {
         </footer>
       </div>
       </DataPortfolioProvider>
-      </FavoritosProvider>
+      </FavoritesProvider>
     </Router>
   );
 };

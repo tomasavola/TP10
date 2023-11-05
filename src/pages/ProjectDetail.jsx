@@ -2,12 +2,12 @@ import React from "react";
 import { useEffect, useState, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { DataPortfolioContext } from "../context/DataPorfolioContext";
-import { FavoritosContext } from "../context/FavoritosContext";
-import dedo from "../assets/images/Hireme/dedo.png";
+import { FavoritesContext } from "../context/FavoritesContext";
+import { MetaContext } from "../context/MetaContext";
 
 export default function ProjectDetail() {
   let { dataPortfolio } = useContext(DataPortfolioContext);
-  let { favorites, addCreation, deleteCreation } = useContext(FavoritosContext);
+  let { favorites, addCreation, deleteCreation } = useContext(FavoritesContext);
   const { id } = useParams();
   const [creation, setCreation] = useState(null);
 
@@ -60,7 +60,8 @@ export default function ProjectDetail() {
                  GO BACK
                 </button>
 
-                {favorites.find((favorite) => favorite.id.toString() === creation.id.toString()) ? (
+         
+{favorites.find((favorite) => favorite.id.toString() === creation.id.toString()) ? (
               <button onClick={() => deleteCreation(creation)}>Delete from favorites</button>
             ):(
               <button onClick={() => addCreation(creation)}>Add to favorites</button>
@@ -69,6 +70,17 @@ export default function ProjectDetail() {
               </div>
             </div>
           </div>
+          <div className="mb-5 po_items_ho">
+          {favorites.length !== 0 ? (
+  (favorites.map((data, i) => {
+    return (
+      <h4 key={i}>{data.nombre}</h4>
+    );
+  }))
+) : (
+  <h1>There are no favorites yet</h1>
+)}  
+        </div>
         </section>
       </>
     );

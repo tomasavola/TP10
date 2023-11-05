@@ -2,12 +2,13 @@ import React, { createContext, useState, useEffect } from "react";
 
 const KEY_FAVORITES = 'favorites';
 
-export const FavoritosContext = createContext();
+export const FavoritesContext = createContext();
 
-const FavoritosProvider = (props) => {
+const FavoritesProvider = (props) => {
     const [favorites, setFavorites] = useState([]);
 
     const loadFavorites = () => {
+        // localStorage.setItem(KEY_FAVORITES, JSON.stringify([]))
         let items = JSON.parse(localStorage.getItem(KEY_FAVORITES));
         if (items) {
             setFavorites(items);
@@ -40,7 +41,7 @@ const FavoritosProvider = (props) => {
 
     if(favorites){
         return (
-            <FavoritosContext.Provider
+            <FavoritesContext.Provider
                 value={{
                     favorites,
                     addCreation,
@@ -48,7 +49,7 @@ const FavoritosProvider = (props) => {
                 }}
             >
                 {props.children}
-            </FavoritosContext.Provider>
+            </FavoritesContext.Provider>
         );
     }else{
         return(
@@ -57,4 +58,4 @@ const FavoritosProvider = (props) => {
     }
 };
 
-export default FavoritosProvider;
+export default FavoritesProvider;
