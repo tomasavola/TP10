@@ -69,17 +69,7 @@ export default function ProjectDetail() {
               </div>
             </div>
           </div>
-          <div className="mb-5 po_items_ho">
-          {favorites.length !== 0 ? (
-  (favorites.map((data, i) => {
-    return (
-      <h4 key={i}>{data.nombre}</h4>
-    );
-  }))
-) : (
-  <h1>There are no favorites yet</h1>
-)}  
-        </div>
+          
         </section>
       </>
     );

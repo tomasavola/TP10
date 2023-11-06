@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import Navbar from "./Layouts/Navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
-import Service from "./components/Services";
+import Favorites from "./components/Favorites";
 import Projects from "./components/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Testimonials from "./components/Testimonials";
@@ -32,7 +32,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <Skills />
-        <Service />
+        <Favorites />
         <Routes>
           <Route path="/" element={<Projects />} />
           {/* Utiliza el parámetro "id" en la ruta */}
