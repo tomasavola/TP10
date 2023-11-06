@@ -50,22 +50,21 @@ export default function ProjectDetail() {
               >
                 <p className="leading-7">{creation.descripcion}</p>
                 <br />
-                <button className="btn bg-dark_primary text-white">
-                  ADD TO FAVORITES
-                </button>
+
+                {favorites.find((favorite) => favorite.id.toString() === creation.id.toString()) ? (
+              <button className="btn bg-dark_primary text-white" onClick={() => deleteCreation(creation)}>Delete from favorites</button>
+            ):(
+              <button className="btn bg-dark_primary text-white" onClick={() => addCreation(creation)}>Add to favorites</button>
+            )}     
 
                 <br /><br />
 
                 <button className="btn bg-dark_primary text-white" onClick={() => window.history.back()}>
-                 GO BACK
+                 Go back
                 </button>
 
-         
-{favorites.find((favorite) => favorite.id.toString() === creation.id.toString()) ? (
-              <button onClick={() => deleteCreation(creation)}>Delete from favorites</button>
-            ):(
-              <button onClick={() => addCreation(creation)}>Add to favorites</button>
-            )}           
+                {/*dddd*/}  
+    
                 
               </div>
             </div>
