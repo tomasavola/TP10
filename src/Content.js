@@ -71,8 +71,8 @@ export const content = {
     ],
   },
   skills: {
-    title: "Competenze",
-    subtitle: "Le mie capacità",
+    title: "Skills",
+    subtitle: "MY ABILITIES AND SKILLS",
     skills_content: [
       {
         name: "Pianificatore di eventi",
@@ -130,7 +130,7 @@ export const content = {
   },
   Projects: {
     title: "Projects",
-    subtitle: "MY CREATION",
+    subtitle: "MY CREATIONS",
     image: person_project,
   },
   Testimonials: {

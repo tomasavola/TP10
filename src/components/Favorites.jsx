@@ -6,30 +6,44 @@ const Favorites = () => {
   const { favorites } = useContext(FavoritesContext);
 
   return (
-    <Container>
-      <Row className="mb-5 mt-3 pt-md-3">
-        <Col lg="8">
-          <h2 className="title" data-aos="fade-down">
-            Favorites
-          </h2>
-          <h4 className="subtitle" data-aos="fade-down">
-            Your Favorite Items
-          </h4>
-          <hr className="t_border my-4 ml-0 text-left" />
-        </Col>
-      </Row>
-      <div className="flex gap-5 justify-between flex-wrap group">
-        {favorites.length !== 0 ? (
-          favorites.map((data, i) => (
-            <div key={i} data-aos="fade-up" data-aos-delay={i * 600}>
-              <h3>{data.titulo}</h3>
-            </div>
-          ))
-        ) : (
-          <h3>There are no favorites yet</h3>
-        )}
+    <section id="services">
+      <div className="md:container px-5 py-14">
+        <h2 className="title" data-aos="fade-down">
+          Favorites
+        </h2>
+        <h4 className="subtitle" data-aos="fade-down">
+          YOUR FAVOURITE ITEMS
+        </h4>
+        <br />
+        <div className="flex gap-5 justify-between flex-wrap group">
+          {favorites.length > 0 ? (
+            favorites.map((data, i) => (
+              <div
+                key={i}
+                data-aos="fade-up"
+                data-aos-delay={i * 600}
+                className="min-w-[14rem] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm hover:!blur-none"
+              >
+                <img src={data.imagenes} alt="..." className="mx-auto" />
+                <h6 className="my-3">{data.titulo}</h6>
+                <p className="leading-7">{data.descripcion}</p>
+              </div>
+            ))
+          ) : (
+            <>
+              <div className="min-w-[14rem]"></div>
+              <div className="min-w-[14rem]"></div>
+              <div
+                className="min-w-[14rem] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm hover:!blur-none"
+              >
+                <h6 className="my-3">No favorites yet</h6>
+                <p className="leading-7">Start adding your favorite items!</p>
+              </div>
+            </>
+          )}
+        </div>
       </div>
-    </Container>
+    </section>
   );
 };
 
