@@ -1,14 +1,15 @@
+import { useState } from "react";
 import { content } from "../Content";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { createElement } from "react";
 import { Icon } from "@iconify/react";
 import { Badge } from "primereact/badge";
-import { useState } from "react";
+
 
 const Navbar = () => {
   const { nav } = content;
   const [showMenu, setShowMenu] = useState(false);
   const [active, setActive] = useState(0);
-
   return (
     <div className="w-full flex justify-center">
       <div
@@ -29,6 +30,7 @@ const Navbar = () => {
             className={`text-xl p-2.5 rounded-full sm:cursor-pointer 
      ${i === active && "bg-dark_primary text-white"} `}
           >
+            {createElement(item.icon)}
             <div style={{ display: "flex", alignItems: "center" }}>
               <Icon icon={item.icon} style={{ fontSize: "1.5rem" }} />
               {item.badge && (
@@ -44,5 +46,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

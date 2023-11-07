@@ -17,6 +17,7 @@ import person_project from "./assets/images/projects/person.png";
 import santi from "./assets/images/Testimonials/santi.png";
 import juanceto from "./assets/images/Testimonials/juanceto.png";
 import desconocido from "./assets/images/Testimonials/desconocido.png";
+import raba from "./assets/images/Testimonials/raba.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
@@ -46,7 +47,7 @@ export const content = {
     },
     {
       link: "#skills",
-      icon: "BiUser",
+      icon: BiUser,
     },
     {
       link: "#services",
@@ -60,17 +61,12 @@ export const content = {
       link: "#contact",
       icon: MdOutlinePermContactCalendar,
     },
-    {
-      link: "#notifications",
-      icon: bellIcon,
-      badge: 2,
-    },
+ 
   ],
   hero: {
     title: "CEO Aereolineas Splinter",
     firstName: "Geronimo",
     lastName: "Benavides",
-    btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
@@ -89,7 +85,7 @@ export const content = {
     skills_content: [
       {
         name: "Pianificatore di eventi",
-        para: "Lorem ipsum text  dummy",
+        para: "organizzatore delle migliori feste di San Clemente",
         logo: disco,
       },
       {
@@ -120,27 +116,7 @@ export const content = {
     ],
     icon: MdArrowForward,
   },
-  services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
-    service_content: [
-      {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
-      },
-      {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
-      },
-      {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
-      },
-    ],
-  },
+  
   Projects: {
     title: "Projects",
     subtitle: "MY CREATIONS",
@@ -155,6 +131,12 @@ export const content = {
           "“ Y esos auris de virgo momo?”",
         img: juanceto,
         name: "Juanceto01",
+      },
+      {
+        review:
+          "“Rubius no te gustaria vivir en Argentina, creeme esta todo muy caro :'v <3 ”",
+        img: raba,
+        name: "El tata",
       },
       {
         review:
@@ -174,16 +156,16 @@ export const content = {
         img: desconocido,
         name: "Usuario desconocido",
       },
+      {
+        review:
+          "“Fernan has el reto de detener el tren con nuestro buen amigo el niga like para qu fernan lo vea carajo”",
+        img: raba,
+        name: "El tata",
+      },
+
     ],
   },
-  Hireme: {
-    title: "Hire Me",
-    subtitle: "FOR YOUR PROJECTS",
-    image1: Hireme_person,
-    image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-    btnText: "Hire Me",
-  },
+ 
   Contact: {
     title: "Contact Me",
     subtitle: "GET IN TOUCH",
@@ -194,7 +176,7 @@ export const content = {
         link: "mailto:codeaprogram@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+39 1005 1987",
         icon: MdCall,
         link: "https://wa.me/1234567890",
       },
@@ -206,6 +188,6 @@ export const content = {
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2022",
+    text: "All © Copy Right Reserved 2023",
   },
 };
