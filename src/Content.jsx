@@ -31,7 +31,7 @@ import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 
 import { Icon } from "@iconify/react";
-import {bellIcon} from "@iconify/icons-bi/bell";
+import { bellIcon } from "@iconify/icons-bi/bell";
 
 
 
@@ -60,8 +60,11 @@ export const content = {
       link: "#contact",
       icon: MdOutlinePermContactCalendar,
     },
-    // Agregar el ícono de la campana con el badge
-   
+    {
+      link: "#notifications",
+      icon: bellIcon,
+      badge: 2,
+    },
   ],
   hero: {
     title: "CEO Aereolineas Splinter",

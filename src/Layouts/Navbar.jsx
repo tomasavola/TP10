@@ -1,7 +1,8 @@
-import { useState } from "react";
 import { content } from "../Content";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { createElement } from "react";
+import { Icon } from "@iconify/react";
+import { Badge } from "primereact/badge";
+import { useState } from "react";
 
 const Navbar = () => {
   const { nav } = content;
@@ -28,7 +29,15 @@ const Navbar = () => {
             className={`text-xl p-2.5 rounded-full sm:cursor-pointer 
      ${i === active && "bg-dark_primary text-white"} `}
           >
-            {createElement(item.icon)}
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <Icon icon={item.icon} style={{ fontSize: "1.5rem" }} />
+              {item.badge && (
+                <Badge
+                  value={item.badge}
+                  className="p-overlay-badge"
+                />
+              )}
+            </div>
           </a>
         ))}
       </nav>
